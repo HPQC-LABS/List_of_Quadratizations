@@ -741,6 +741,19 @@ Decomposition of degree-
 \begin_layout Standard
 \begin_inset Formula 
 \begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}+b_{1}b_{2}b_{4}+b_{1}b_{3}b_{4}+b_{2}b_{3}b_{4}: & \text{ \ensuremath{(k,n)=(3,4)}.}\\
+\longrightarrow & \,\,\,2b_{1}b_{2}+b_{1}b_{3}+2b_{1}b_{4}+b_{2}b_{3}+2b_{2}b_{4}+b_{3}b_{4}-2b_{1}-2b_{2}-b_{3}-2b_{4}+3\\
+\longrightarrow & \,\,\,3b_{1}b_{3}+b_{2}b_{4}
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}+b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}+b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}b_{9}+b_{4}b_{5}b_{6}b_{7}b_{8}b_{9}b_{10}: & \text{ \ensuremath{(k,n)=(7,10)}.}\\
 \longrightarrow & \,\,\,b_{1}b_{2}+b_{2}b_{5}+b_{5}b_{7}+b_{5}b_{10}-b_{a}(b_{9}+b_{10})+b_{9}+b_{10}\\
 \longrightarrow & \,\,\,b_{5}b_{6}+b_{6}b_{8}+b_{6}b_{9}+b_{6}b_{10}-b_{a}(b_{9}+b_{10})+b_{9}+b_{10}\\
@@ -751,6 +764,61 @@ Decomposition of degree-
 \longrightarrow & \,\,\,b_{2}b_{3}-b_{6}b_{7}+b_{6}b_{8}+b_{7}b_{8}-b_{a}(b_{9}+b_{10})+b_{8}+b_{9}+b_{10}+1\\
 \longrightarrow & \,\,\,-b_{1}b_{2}+b_{1}b_{4}+b_{2}b_{5}-b_{4}b_{9}+b_{5}b_{8}+b_{5}b_{9}-b_{a}(b_{9}+b_{10})-b_{4}+b_{5}-b_{7}+2b_{9}+b_{10}+2\\
 \longrightarrow & \,\,\,b_{2}b_{8}+b_{8}b_{10}+b_{a}(b_{8}-b_{9}-b_{10})+b_{1}+b_{9}+b_{10} & 1021/1024\,\,(99.7\%)
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Decomposition of degree-
+\begin_inset Formula $k$
+\end_inset
+
+, not exact-
+\begin_inset Formula $k$
+\end_inset
+
+-of-
+\begin_inset Formula $n$
+\end_inset
+
+ quadrinomials
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}+2b_{1}b_{2}b_{3}+b_{1}b_{2}b_{4}+b_{1}b_{3}b_{4}+b_{2}b_{3}b_{4}: & \text{ \ensuremath{(k,n)=(4,4)}.}\\
+\longrightarrow & \,\,\,b_{1}b_{2}+b_{1}b_{3}+b_{1}b_{4}+4b_{2}b_{3}+b_{2}b_{4}+b_{3}b_{4}-b_{1}-b_{2}-b_{3}-b_{4}+1\\
+\longrightarrow & \,\,\,b_{1}b_{2}+b_{1}b_{3}+4b_{1}b_{4}+b_{2}b_{4}
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}+2b_{1}b_{2}b_{3}+b_{1}b_{2}b_{4}+3b_{1}b_{3}b_{4}+b_{2}b_{3}b_{4}: & \text{ \ensuremath{(k,n)=(4,4)}.}\\
+\longrightarrow & \,\,\,2b_{1}b_{2}+5b_{1}b_{4}+b_{3}b_{4}\\
+\longrightarrow & \,\,\,-b_{1}b_{2}+3b_{1}b_{3}+4b_{2}b_{3}+2b_{2}b_{4}-4b_{3}b_{4}+4b_{3}-b_{4}+1
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}+2b_{1}b_{2}b_{3}+b_{1}b_{3}b_{4}: & \text{ \ensuremath{(k,n)=(4,4)}.}\\
+\longrightarrow & \,\,\,4b_{1}b_{3}\\
+\longrightarrow & \,\,\,2b_{1}b_{2}+b_{1}b_{4}+b_{2}b_{4}
 \end{flalign}
 
 \end_inset
