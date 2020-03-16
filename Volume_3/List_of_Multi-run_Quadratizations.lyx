@@ -187,8 +187,8 @@ Cubic:
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace A_{1}B_{2}C_{3}: & \text{ }\\
-\longrightarrow & \,\,\,1+(A_{1}-B_{2}C_{3})\\
-\longrightarrow & \,\,\,1-(A_{1}-B_{2}C_{3})
+\longrightarrow & \,\,\,1+(A_{1}-B_{2}C_{3}) & 6/8\,\,\,(75\%)\\
+\longrightarrow & \,\,\,1-(A_{1}-B_{2}C_{3}) & 8/8(100\%)
 \end{flalign}
 
 \end_inset
@@ -197,7 +197,23 @@ Cubic:
 \end_layout
 
 \begin_layout Standard
-where A, B and C can be any of the Pauli matrices X, Y or Z.
+where 
+\begin_inset Formula $A,B$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ can be any of the Pauli matrices 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ or 
+\begin_inset Formula $Z$
+\end_inset
+
+.
  For example:
 \end_layout
 
@@ -205,8 +221,8 @@ where A, B and C can be any of the Pauli matrices X, Y or Z.
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace Z_{1}Y_{2}Y_{3}: & \text{ }\\
-\longrightarrow & \,\,\,1+(Z_{1}-Y_{2}Y_{3})\\
-\longrightarrow & \,\,\,1-(Z_{1}-Y_{2}Y_{3})
+\longrightarrow & \,\,\,1+(Z_{1}-Y_{2}Y_{3}) & 6/8\,\,\,(75\%)\\
+\longrightarrow & \,\,\,1-(Z_{1}-Y_{2}Y_{3}) & 8/8(100\%)
 \end{flalign}
 
 \end_inset
@@ -222,8 +238,8 @@ or
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace X_{1}Y_{2}Z_{3}: & \text{ }\\
-\longrightarrow & \,\,\,1+(X_{1}-Y_{2}Z_{3})\\
-\longrightarrow & \,\,\,1-(X_{1}-Y_{2}Z_{3})
+\longrightarrow & \,\,\,1+(X_{1}-Y_{2}Z_{3}) & 6/8\,\,\,(75\%)\\
+\longrightarrow & \,\,\,1-(X_{1}-Y_{2}Z_{3}) & 8/8(100\%)
 \end{flalign}
 
 \end_inset
@@ -240,9 +256,92 @@ Quartic:
 \begin_layout Standard
 \begin_inset Formula 
 \begin{flalign}
- & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace Z_{1}Z_{2}Z_{3}X_{4}: & \text{ }\\
-\longrightarrow & \,\,\,1+(Z_{1}Z_{2}-Z_{3}X_{4})\\
-\longrightarrow & \,\,\,1-(Z_{1}Z_{2}-Z_{3}X_{4})
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace A_{1}B_{2}C_{3}D_{4}: & \text{ }\\
+\longrightarrow & \,\,\,1+(A_{1}B_{2}-C_{3}D_{4}) & 12/16\,\,\,(75\%)\\
+\longrightarrow & \,\,\,1-(A_{1}B_{2}-C_{3}D_{4}) & 16/16(100\%)
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $A,B,C$
+\end_inset
+
+ and 
+\begin_inset Formula $D$
+\end_inset
+
+ can be any of the Pauli matrices 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ or 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ For example:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace Z_{1}X_{2}Y_{3}X_{4}: & \text{ }\\
+\longrightarrow & \,\,\,1+(Z_{1}X_{2}-Y_{3}X_{4}) & 12/16\,\,\,(75\%)\\
+\longrightarrow & \,\,\,1-(Z_{1}X_{2}-Y_{3}X_{4}) & 16/16(100\%)
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Degree-k:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace A_{1}B_{2}C_{3}...D_{k}: & \text{ }\\
+\longrightarrow & \,\,\,1+(A_{1}B_{2}-C_{3}...D_{k}) & \,\,\,(75\%)\\
+\longrightarrow & \,\,\,1-(A_{1}B_{2}-C_{3}...D_{k}) & (100\%)
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $A,B,C,...,D$
+\end_inset
+
+ can be any of the Pauli matrices 
+\begin_inset Formula $X,Y$
+\end_inset
+
+ or 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ For example:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace X_{1}Y_{2}X_{3}Z_{4}Y_{5}Z_{6}: & \text{ }\\
+\longrightarrow & \,\,\,1+(X_{1}Y_{2}-X_{3}Z_{4}Y_{5}Z_{6}) & 48/64\,\,\,(75\%)\\
+\longrightarrow & \,\,\,1-(X_{1}Y_{2}-X_{3}Z_{4}Y_{5}Z_{6}) & 64/64(100\%)
 \end{flalign}
 
 \end_inset
@@ -932,12 +1031,9 @@ status collapsed
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}+b_{2}b_{3}b_{4}b_{5}b_{6}+b_{3}b_{4}b_{5}b_{6}b_{7}: & \text{ \ensuremath{(k,n)=(5,7)}.}\\
 \longrightarrow & \,\,\,2b_{4}b_{5}+b_{4}b_{6} & 81/128\,\,\,(63\%)\\
-\longrightarrow & \,\,\,%b_{1}b_{3}+b_{3}b_{6}+b_{3}b_{7}-b_{4}b_{5}+b_{5}
- & 111/128\,\,\,(87\%)\\
-\longrightarrow & \,\,\,%b_{1}b_{2}+b_{2}b_{6}-b_{4}b_{5}+b_{6}b_{7}+b_{5}
- & 122/128\,\,\,(95\%)\\
-\longrightarrow & \,\,\,%2b_{4}b_{5}+b_{5}
- & 128/128(100\%)
+\longrightarrow & \,\,\,b_{1}b_{3}+b_{3}b_{6}+b_{3}b_{7}-b_{4}b_{5}+b_{5} & 111/128\,\,\,(87\%)\\
+\longrightarrow & \,\,\,b_{1}b_{2}+b_{2}b_{6}-b_{4}b_{5}+b_{6}b_{7}+b_{5} & 122/128\,\,\,(95\%)\\
+\longrightarrow & \,\,\,2b_{4}b_{5}+b_{5} & 128/128(100\%)
 \end{flalign}
 
 \end_inset
@@ -970,8 +1066,7 @@ status collapsed
 \longrightarrow & \,\,\,b_{1}b_{6}+2b_{6}b_{7} & 164/256\,\,\,(64\%)\\
 \longrightarrow & \,\,\,b_{1}b_{5}+b_{2}b_{5}-b_{3}b_{6}+b_{5}b_{8}+b_{3} & 219/256\,\,\,(86\%)\\
 \longrightarrow & \,\,\,b_{2}b_{4}+b_{4}b_{7}+b_{4}b_{8}-b_{6}+1 & 243/256\,\,\,(95\%)\\
-\longrightarrow & \,\,\,%b_{2}b_{3}+b_{3}b_{8}-b_{5}b_{6}+b_{3}+b_{6}
- & 253/256\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{2}b_{3}+b_{3}b_{8}-b_{5}b_{6}+b_{3}+b_{6} & 253/256\,\,\,(99\%)\\
 \longrightarrow & \,\,\,b_{1}b_{2}+b_{2}b_{6}+b_{5}b_{7}-b_{6}b_{7}+b_{7}b_{8}-b_{5}+1 & 256/256(100\%)
 \end{flalign}
 
@@ -1275,7 +1370,7 @@ Decomposition of degree-
 \begin_inset Formula $n$
 \end_inset
 
- quadrinomials
+ multinomials
 \end_layout
 
 \begin_layout Standard
