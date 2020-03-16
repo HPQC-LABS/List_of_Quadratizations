@@ -171,6 +171,43 @@ b_{1}b_{2}b_{3}b_{4} & =\min\left(b_{1}b_{2}\textcolor{red}{\textcolor{blue}{\bo
 
 \end_layout
 
+\begin_layout Standard
+
+\series bold
+Quantum envelopes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace A_{1}B_{2}C_{3}: & \text{ }\\
+\longrightarrow & \,\,\,1+(A_{1}-B_{2}C_{3})\\
+\longrightarrow & \,\,\,1-(A_{1}-B_{2}C_{3})
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where A, B and C can be any of the Pauli matrices X, Y or Z.
+ For example:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace Z_{1}Y_{2}Y_{3}: & \text{ }\\
+\longrightarrow & \,\,\,1+(Z_{1}-Y_{2}Y_{3})\\
+\longrightarrow & \,\,\,1-(Z_{1}-Y_{2}Y_{3})
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 Decomposition of binomials of degree-
 \begin_inset Formula $k$
