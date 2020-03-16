@@ -178,6 +178,12 @@ Quantum envelopes:
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+Cubic:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace A_{1}B_{2}C_{3}: & \text{ }\\
@@ -201,6 +207,42 @@ where A, B and C can be any of the Pauli matrices X, Y or Z.
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace Z_{1}Y_{2}Y_{3}: & \text{ }\\
 \longrightarrow & \,\,\,1+(Z_{1}-Y_{2}Y_{3})\\
 \longrightarrow & \,\,\,1-(Z_{1}-Y_{2}Y_{3})
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+or
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace X_{1}Y_{2}Z_{3}: & \text{ }\\
+\longrightarrow & \,\,\,1+(X_{1}-Y_{2}Z_{3})\\
+\longrightarrow & \,\,\,1-(X_{1}-Y_{2}Z_{3})
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Quartic:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace Z_{1}Z_{2}Z_{3}X_{4}: & \text{ }\\
+\longrightarrow & \,\,\,1+(Z_{1}Z_{2}-Z_{3}X_{4})\\
+\longrightarrow & \,\,\,1-(Z_{1}Z_{2}-Z_{3}X_{4})
 \end{flalign}
 
 \end_inset
