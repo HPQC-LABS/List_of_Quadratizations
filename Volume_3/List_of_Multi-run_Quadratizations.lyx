@@ -174,6 +174,100 @@ b_{1}b_{2}b_{3}b_{4} & =\min\left(b_{1}b_{2}\textcolor{red}{\textcolor{blue}{\bo
 \begin_layout Standard
 
 \series bold
+Factorization Envelope:
+\end_layout
+
+\begin_layout Standard
+Let F be a quadratic function with 
+\begin_inset Formula $E_{0}\leq F\leq E_{1}$
+\end_inset
+
+ for some energies 
+\begin_inset Formula $E_{0},E_{1}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $E_{0}\geq0$
+\end_inset
+
+, we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}...b_{k}F: & \text{ }\\
+\longrightarrow & \,\,\,E_{1}b_{1}b_{2}...b_{k}\label{eq:monomial}\\
+\longrightarrow & \,\,\,F
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where Eq.
+ (
+\begin_inset Formula $\ref{eq:monomial}$
+\end_inset
+
+) can be quadratized using Eq.
+ (
+\begin_inset Formula $\ref{eq:monomialDecomp}$
+\end_inset
+
+).
+ If 
+\begin_inset Formula $E_{0}<0$
+\end_inset
+
+, we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}...b_{k}F: & \text{ }\\
+\longrightarrow & \,\,\,E_{1}b_{1}b_{2}...b_{k}\\
+\longrightarrow & \,\,\,F-E_{0}(1-b_{1}b_{2}...b_{k})
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the deg-k monomials can again be quadratized using Eq.
+ (
+\begin_inset Formula $\ref{eq:monomialDecomp}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+An example of this factorization envelope is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}+b_{2}b_{3}b_{4}-b_{3}b_{4}b_{5}: & \text{ }\\
+\longrightarrow & \,\,\,2b_{3}b_{4} & 25/32\,\,\,(78\%)\\
+\longrightarrow & \,\,\,b_{1}b_{2}+b_{2}-b_{5}-b_{3}b_{4}+1 & 32/32(100\%)
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
 Quantum envelopes:
 \end_layout
 
@@ -379,12 +473,8 @@ b_{1}b_{2}b_{3}b_{4}+b_{3}b_{4}b_{5}b_{6} & =\min_{b_{a}}\left(b_{2}b_{3}+b_{a}(
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\align left
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align left
@@ -401,15 +491,35 @@ b_{1}b_{2}b_{3}b_{4}+b_{4}b_{5}b_{6}b_{7} & =\min_{b_{a}}\left(b_{2}b_{3}+b_{5}b
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}+b_{4}b_{5}b_{6}b_{7}: & \text{ \ensuremath{(k,n)=(4,7)}.}\\
 \longrightarrow & \,\,\,b_{2}b_{3}+b_{5}b_{6}+b_{a}(1-b_{5}-b_{6}+b_{7})\\
 \longrightarrow & \,\,\,b_{1}b_{4}+b_{4}+b_{a}\\
 \longrightarrow & \,\,\,b_{5}b_{6}+b_{1}+b_{a}(1-b_{5}-b_{6}+b_{7})
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}+b_{4}b_{5}b_{6}b_{7}: & \text{ \ensuremath{(k,n)=(4,7)}.}\\
+\longrightarrow & \,\,\,b_{3}b_{4}+b_{4}b_{6}+b_{a}(b_{5}+b_{7}) & 89/128\,\,\,(70\%)\\
+\longrightarrow & \,\,\,b_{1}b_{2}+b_{5}b_{7}+b_{a}(1-b_{5}+b_{6}-b_{7}) & 125/128\,\,\,(98\%)\\
+\longrightarrow & \,\,\,b_{5}b_{7}+b_{3} & 128/128(100\%)
 \end{flalign}
 
 \end_inset
@@ -430,15 +540,36 @@ b_{1}b_{2}b_{3}b_{4}+b_{4}b_{5}b_{6}b_{7} & =\min_{b_{a}}\left(b_{2}b_{3}+b_{5}b
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}+b_{3}b_{4}b_{5}b_{6}b_{7}: & \text{ \ensuremath{(k,n)=(5,7)}.}\\
 \longrightarrow & \,\,\,b_{2}b_{5}+b_{5}b_{6}+b_{5}b_{7}+b_{6}b_{7}+b_{a}(b_{5}+b_{6}+b_{7}-1)-b_{5}-b_{6}-b_{7}+1\\
 \longrightarrow & \,\,\,b_{1}b_{3}+b_{3}b_{7}+b_{a}(1+b_{5}-b_{7})-b_{5}+1\\
 \longrightarrow & \,\,\,b_{1}b_{4}+b_{4}b_{6}-b_{5}b_{6}+b_{5}b_{a}-b_{5}+b_{6}+1
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}+b_{3}b_{4}b_{5}b_{6}b_{7}: & \text{ \ensuremath{(k,n)=(5,7)}.}\\
+\longrightarrow & \,\,\,b_{1}b_{5}+b_{5}b_{6}+b_{5}b_{7}+b_{6}b_{7}+b_{a}(1-b_{5}-2b_{6}-b_{7})+b_{6} & 188/256\,\,\,(73\%)\\
+\longrightarrow & \,\,\,b_{3}b_{4}+b_{a}(b_{4}-b_{6})+b_{6} & 236/256\,\,\,(92\%)\\
+\longrightarrow & \,\,\,b_{2}b_{3}+b_{3}b_{6}-b_{4}b_{6}+b_{6}b_{a}+b_{6} & 254/256\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{2}b_{5}+b_{5}b_{7} & 256/256(100\%)
 \end{flalign}
 
 \end_inset
@@ -458,9 +589,31 @@ b_{1}b_{2}b_{3}b_{4}+b_{4}b_{5}b_{6}b_{7} & =\min_{b_{a}}\left(b_{2}b_{3}+b_{5}b
 \end_inset
 
 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}+b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}: & \text{ \ensuremath{(k,n)=(6,7)}.}\\
+\longrightarrow & \,\,\,b_{5}b_{6}+b_{5}b_{7}-b_{5}b_{8}+b_{6}b_{8}-b_{7}b_{8}+b_{8}\\
+\longrightarrow & \,\,\,b_{1}b_{4}+b_{a}(b_{4}-b_{7})+b_{7}\\
+\longrightarrow & \,\,\,b_{2}b_{3}+b_{2}b_{7}-b_{5}b_{6}-b_{7}b_{a}+b_{5}+b_{7}\\
+\longrightarrow & \,\,\,b_{2}b_{3}+b_{7}b_{a}+b_{3}
+\end{flalign}
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}+b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}: & \text{ \ensuremath{(k,n)=(6,7)}.}\\
@@ -468,6 +621,23 @@ b_{1}b_{2}b_{3}b_{4}+b_{4}b_{5}b_{6}b_{7} & =\min_{b_{a}}\left(b_{2}b_{3}+b_{5}b
 \longrightarrow & \,\,\,2b_{4}b_{5}-b_{5}b_{6}+b_{5}\\
 \longrightarrow & \,\,\,b_{1}b_{4}-b_{2}b_{5}+b_{2}b_{6}+b_{2}b_{7}+b_{5}b_{7}-b_{6}b_{7}-b_{5}-b_{6}+2\\
 \longrightarrow & \,\,\,b_{1}b_{2}-b_{1}b_{5}+b_{1}b_{7}+b_{2}b_{3}+b_{3}b_{6}-b_{3}b_{7}-b_{4}b_{5}-b_{5}b_{6}-b_{3}+b_{5}+2
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}+b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}: & \text{ \ensuremath{(k,n)=(6,7)}.}\\
+\longrightarrow & \,\,\,b_{5}b_{6}+b_{6}b_{7}+b_{a}(1+b_{5}-b_{6}-b_{7}) & 196/256\,\,\,(77\%)\\
+\longrightarrow & \,\,\,b_{1}b_{4}+b_{2}b_{4}+b_{7}b_{a} & 238/256\,\,\,(93\%)\\
+\longrightarrow & \,\,\,b_{1}b_{3}+b_{3}b_{7}-b_{4}b_{6}+2b_{5}b_{a}-b_{6}b_{7}-b_{5}+b_{6}+b_{7}+b_{a}+1 & 252/256\,\,\,(98\%)\\
+\longrightarrow & \,\,\,b_{2}b_{6}+b_{2}-b_{6}+1 & 256/256(100\%)
 \end{flalign}
 
 \end_inset
@@ -488,30 +658,23 @@ b_{1}b_{2}b_{3}b_{4}+b_{4}b_{5}b_{6}b_{7} & =\min_{b_{a}}\left(b_{2}b_{3}+b_{5}b
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
-The gadget below uses an aux, the ones above do not.
-\end_layout
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}+b_{4}b_{5}b_{6}b_{7}b_{8}: & \text{ \ensuremath{(k,n)=(5,8)}.}\\
+\longrightarrow & \,\,\,b_{1}b_{2}+b_{6}b_{8}+b_{a}\left(1-b_{6}+b_{7}-b_{8}\right)\\
+\longrightarrow & \,\,\,b_{3}b_{5}+b_{8}b_{a}+b_{5}\\
+\longrightarrow & \,\,\,b_{4}b_{7}+b_{4}\\
+\longrightarrow & \,\,\,b_{7}b_{8}+b_{a}(1+b_{6}-b_{7}-b_{8})+b_{3}
+\end{flalign}
 
 \end_inset
 
 
 \end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{flalign}
- & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}+b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}: & \text{ \ensuremath{(k,n)=(6,7)}.}\\
-\longrightarrow & \,\,\,b_{5}b_{6}+b_{5}b_{7}-b_{5}b_{8}+b_{6}b_{8}-b_{7}b_{8}+b_{8}\\
-\longrightarrow & \,\,\,b_{1}b_{4}+b_{a}(b_{4}-b_{7})+b_{7}\\
-\longrightarrow & \,\,\,b_{2}b_{3}+b_{2}b_{7}-b_{5}b_{6}-b_{7}b_{a}+b_{5}+b_{7}\\
-\longrightarrow & \,\,\,b_{2}b_{3}+b_{7}b_{a}+b_{3}
-\end{flalign}
 
 \end_inset
 
@@ -522,10 +685,10 @@ The gadget below uses an aux, the ones above do not.
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}+b_{4}b_{5}b_{6}b_{7}b_{8}: & \text{ \ensuremath{(k,n)=(5,8)}.}\\
-\longrightarrow & \,\,\,b_{1}b_{2}+b_{6}b_{8}+b_{a}\left(1-b_{6}+b_{7}-b_{8}\right)\\
-\longrightarrow & \,\,\,b_{3}b_{5}+b_{8}b_{a}+b_{5}\\
-\longrightarrow & \,\,\,b_{4}b_{7}+b_{4}\\
-\longrightarrow & \,\,\,b_{7}b_{8}+b_{a}(1+b_{6}-b_{7}-b_{8})+b_{3}
+\longrightarrow & \,\,\,b_{3}b_{5}+b_{7}b_{8}+b_{a}(-1-b_{6}+b_{7}+b_{8})+b_{6}-b_{7}-b_{8}+1 & 360/512\,\,\,(70\%)\\
+\longrightarrow & \,\,\,b_{1}b_{4}+b_{4}b_{8}+b_{a}(b_{4}+b_{6}) & 468/512\,\,\,(91\%)\\
+\longrightarrow & \,\,\,b_{1}b_{2}+b_{7}b_{8}+b_{a}(1+b_{6}-b_{7}-b_{8}) & 496/512\,\,\,(97\%)\\
+\longrightarrow & \,\,\,b_{3}b_{5}+b_{5} & 512/512(100\%)
 \end{flalign}
 
 \end_inset
@@ -546,9 +709,10 @@ The gadget below uses an aux, the ones above do not.
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}+b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}: & \text{ \ensuremath{(k,n)=(6,8)}.}\\
@@ -557,6 +721,24 @@ The gadget below uses an aux, the ones above do not.
 \longrightarrow & \,\,\,b_{3}b_{4}+b_{3}b_{7}-b_{a}+1\\
 \longrightarrow & \,\,\,b_{2}b_{4}+b_{7}b_{8}\\
 \longrightarrow & \,\,\,b_{3}b_{4}+b_{4}
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}+b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}: & \text{ \ensuremath{(k,n)=(6,8)}.}\\
+\longrightarrow & \,\,\,b_{1}b_{6}+b_{7}b_{8}+b_{a}(1+b_{6}-b_{7}-b_{8}) & 364/512\,\,\,(71\%)\\
+\longrightarrow & \,\,\,b_{2}b_{3}+b_{5}b_{8}-b_{6}b_{8}+b_{7}b_{a}-b_{7}+b_{8}-b_{a}+1 & 450/512\,\,\,(88\%)\\
+\longrightarrow & \,\,\,b_{1}b_{4}+b_{4} & 488/512\,\,\,(95\%)\\
+\longrightarrow & \,\,\,b_{2}b_{3}+b_{3}b_{7}-b_{6}b_{8}+b_{8}-b_{a}+1 & 502/512\,\,\,(98\%)\\
+\longrightarrow & \,\,\,b_{2}b_{5}+b_{5} & 512/512(100\%)
 \end{flalign}
 
 \end_inset
@@ -577,9 +759,10 @@ The gadget below uses an aux, the ones above do not.
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}+b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}: & \text{ \ensuremath{(k,n)=(7,8)}.}\\
@@ -588,6 +771,24 @@ The gadget below uses an aux, the ones above do not.
 \longrightarrow & \,\,\,b_{1}b_{4}+b_{4}b_{8}-b_{6}b_{a}+b_{6}\\
 \longrightarrow & \,\,\,b_{2}b_{3}+b_{2}\\
 \longrightarrow & \,\,\,b_{1}b_{5}+b_{3}b_{5}+b_{6}b_{a}
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}+b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}: & \text{ \ensuremath{(k,n)=(7,8)}.}\\
+\longrightarrow & \,\,\,b_{6}b_{7}+b_{6}b_{8}+b_{a}(1-b_{6}+b_{7}-b_{8}) & 388/512\,\,\,(76\%)\\
+\longrightarrow & \,\,\,b_{1}b_{3}+b_{3}b_{8}+b_{a}(1+b_{8}) & 470/512\,\,\,(92\%)\\
+\longrightarrow & \,\,\,b_{2}b_{4}-b_{3}b_{8}+b_{4}b_{5}+b_{a}(1-b_{7})+b_{8} & 500/512\,\,\,(98\%)\\
+\longrightarrow & \,\,\,b_{2}b_{5}+b_{2}b_{8}-b_{4}b_{8}-b_{6}b_{7}+b_{6}b_{8}+b_{a}(-1-b_{4}-b_{7}+b_{8})-b_{3}+b_{7}-b_{8}+4 & 508/512\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{2}b_{5}-b_{7}b_{8}+b_{5}+1 & 512/512(100\%)
 \end{flalign}
 
 \end_inset
@@ -609,9 +810,10 @@ The gadget below uses an aux, the ones above do not.
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}+b_{5}b_{6}b_{7}b_{8}: & \text{ \ensuremath{(k,n)=(4,8)}.}\\
@@ -619,6 +821,23 @@ The gadget below uses an aux, the ones above do not.
 \longrightarrow & \,\,\,b_{3}b_{4}+b_{6}b_{8}+2b_{8}b_{a}\\
 \longrightarrow & \,\,\,b_{2}b_{3}+b_{5}b_{7}+b_{a}\left(1-b_{6}+b_{7}\right)\\
 \longrightarrow & \,\,\,b_{1}b_{4}+b_{5}b_{7}-b_{6}b_{8}+b_{7}b_{a}+b_{6}
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}+b_{5}b_{6}b_{7}b_{8}: & \text{ \ensuremath{(k,n)=(4,8)}.}\\
+\longrightarrow & \,\,\,b_{2}b_{3}+b_{6}b_{8}+b_{a}(1-b_{6}+b_{7}-b_{8}) & 390/512\,\,\,(76\%)\\
+\longrightarrow & \,\,\,b_{1}b_{4}+b_{6}b_{8}+b_{a}(1-b_{6}+b_{7}-b_{8}) & 480/512\,\,\,(94\%)\\
+\longrightarrow & \,\,\,b_{2}b_{4}+b_{5}-b_{a}+1 & 506/512\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{1}b_{3}-b_{6}b_{a}+b_{5}+1 & 512/512(100\%)
 \end{flalign}
 
 \end_inset
@@ -640,9 +859,10 @@ The gadget below uses an aux, the ones above do not.
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}+b_{6}b_{7}b_{8}b_{9}b_{10}: & \text{ \ensuremath{(k,n)=(5,10)}.}\\
@@ -654,6 +874,27 @@ The gadget below uses an aux, the ones above do not.
 \longrightarrow & \thinspace\thinspace\thinspace b_{2}b_{5}+b_{6}b_{8}+b_{9}b_{a}\\
 \longrightarrow & \thinspace\thinspace\thinspace b_{2}b_{3}+b_{8}b_{10}+b_{9}b_{a}\\
 \longrightarrow & \thinspace\thinspace\thinspace b_{1}b_{4}+b_{6}b_{7}+b_{9}b_{a}
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}+b_{6}b_{7}b_{8}b_{9}b_{10}: & \text{ \ensuremath{(k,n)=(5,10)}.}\\
+\longrightarrow & \,\,\,b_{1}b_{4}+b_{7}b_{9} & 625/1024\,\,\,(61\%)\\
+\longrightarrow & \,\,\,b_{3}b_{5}+b_{6}b_{8} & 889/1024\,\,\,(87\%)\\
+\longrightarrow & \,\,\,b_{2}b_{5}+b_{7}b_{10} & 972/1024\,\,\,(95\%)\\
+\longrightarrow & \,\,\,b_{2}b_{4}+b_{6}b_{8} & 999/1024\,\,\,(98\%)\\
+\longrightarrow & \,\,\,b_{1}b_{3}+b_{9}b_{10}+b_{9}b_{a} & 1016/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{1}b_{5}+b_{6}b_{9} & 1020/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{1}b_{4}+b_{8}b_{10} & 1022/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{2}b_{3}-b_{4}b_{10}+b_{7}b_{9}+b_{9}b_{a}+1 & 1024/1024(100\%)
 \end{flalign}
 
 \end_inset
@@ -681,10 +922,6 @@ The gadget below uses an aux, the ones above do not.
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\align left
 \begin_inset Note Note
 status collapsed
 
@@ -707,10 +944,6 @@ status collapsed
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\align left
 \begin_inset Note Note
 status collapsed
 
@@ -729,10 +962,6 @@ b_{1}b_{2}b_{3}b_{4}+b_{5}b_{6}b_{7}b_{8}=\min\left(b_{1}b_{2}+b_{6}b_{8}+b_{a}\
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\align left
 \begin_inset Note Note
 status collapsed
 
@@ -755,10 +984,6 @@ status collapsed
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\align left
 \begin_inset Note Note
 status collapsed
 
@@ -785,9 +1010,10 @@ status collapsed
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}+b_{5}b_{6}b_{7}b_{8}b_{9}b_{10}: & \text{ \ensuremath{(k,n)=(6,10)}.}\\
@@ -797,6 +1023,26 @@ status collapsed
 \longrightarrow & \,\,\,b_{3}b_{6}-b_{5}b_{10}+b_{6}b_{7}+b_{a}(1-b_{9})+b_{10}\\
 \longrightarrow & \,\,\,b_{1}b_{2}+b_{7}b_{10}+b_{a}(1-b_{9}-b_{10})+b_{10}\\
 \longrightarrow & \,\,\,b_{3}b_{4}+b_{8}b_{9}+b_{a}(1-b_{9}-b_{10}-b_{2})-b_{2}+b_{9}+b_{10}+1
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}+b_{5}b_{6}b_{7}b_{8}b_{9}b_{10}: & \text{ \ensuremath{(k,n)=(6,10)}.}\\
+\longrightarrow & \,\,\,b_{4}b_{5}+b_{5}b_{9} & 657/1024\,\,\,(64\%)\\
+\longrightarrow & \,\,\,b_{2}b_{6}+b_{6}b_{8} & 905/1024\,\,\,(88\%)\\
+\longrightarrow & \,\,\,b_{1}b_{3}+b_{7}b_{8} & 982/1024\,\,\,(96\%)\\
+\longrightarrow & \,\,\,b_{2}b_{3}+b_{a}(b_{10}-b_{9})+b_{9} & 1011/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{2}b_{4}+b_{7}b_{10} & 1020/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{9}b_{10}+b_{1} & 1023/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{7}b_{8}+b_{4} & 1024/1024(100\%)
 \end{flalign}
 
 \end_inset
@@ -819,9 +1065,10 @@ status collapsed
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}+b_{4}b_{5}b_{6}b_{7}b_{8}b_{9}b_{10}: & \text{ \ensuremath{(k,n)=(7,10)}.}\\
@@ -832,6 +1079,25 @@ status collapsed
 \longrightarrow & \,\,\,b_{3}b_{6}+b_{6}b_{9}+b_{a}\\
 \longrightarrow & \,\,\,b_{2}b_{3}+b_{8}b_{10}\\
 \longrightarrow & \,\,\,b_{1}b_{4}+b_{9}
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}+b_{4}b_{5}b_{6}b_{7}b_{8}b_{9}b_{10}: & \text{ \ensuremath{(k,n)=(7,10)}.}\\
+\longrightarrow & \,\,\,b_{3}b_{5}+b_{5}b_{8} & 649/1024\,\,\,(63\%)\\
+\longrightarrow & \,\,\,b_{2}b_{4}+b_{4}b_{9} & 893/1024\,\,\,(87\%)\\
+\longrightarrow & \,\,\,b_{1}b_{7}+b_{7}b_{10} & 985/1024\,\,\,(96\%)\\
+\longrightarrow & \,\,\,b_{1}b_{6}+b_{6}b_{9}+b_{a} & 1015/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{2}b_{3}+b_{8}b_{10}+b_{a} & 1022/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{1}b_{3}+b_{8}b_{9} & 1024/1024(100\%)
 \end{flalign}
 
 \end_inset
@@ -854,9 +1120,10 @@ status collapsed
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}+b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}b_{9}b_{10}: & \text{ \ensuremath{(k,n)=(8,10)}.}\\
@@ -867,6 +1134,25 @@ status collapsed
 \longrightarrow & \,\,\,b_{1}b_{5}+b_{5}b_{9}-b_{a}(b_{9}+b_{10})+b_{9}+b_{10}\\
 \longrightarrow & \,\,\,b_{6}b_{9}-b_{a}(b_{9}+b_{10})+b_{6}+b_{9}+1\\
 \longrightarrow & \,\,\,b_{1}b_{2}-b_{9}b_{a}+b_{10}+1
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}+b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}b_{9}b_{10}: & \text{ \ensuremath{(k,n)=(8,10)}.}\\
+\longrightarrow & \,\,\,b_{2}b_{8}+b_{8}b_{9} & 645/1024\,\,\,(63\%)\\
+\longrightarrow & \,\,\,b_{1}b_{3}+b_{3}b_{10}+b_{9}b_{a} & 887/1024\,\,\,(87\%)\\
+\longrightarrow & \,\,\,b_{4}b_{6}+b_{5}b_{6} & 977/1024\,\,\,(95\%)\\
+\longrightarrow & \,\,\,b_{2}b_{7}+b_{7}b_{10} & 1007/1024\,\,\,(98\%)\\
+\longrightarrow & \,\,\,b_{1}b_{4}+b_{4}b_{5}+2b_{9}b_{a} & 1018/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{1}b_{5}+b_{5}b_{9} & 1024/1024(100\%)
 \end{flalign}
 
 \end_inset
@@ -888,9 +1174,10 @@ status collapsed
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}b_{9}+b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}b_{9}b_{10}: & \text{ \ensuremath{(k,n)=(9,10)}.}\\
@@ -901,6 +1188,27 @@ status collapsed
 \longrightarrow & \,\,\,b_{1}b_{5}+b_{2}b_{5}+b_{9}b_{a}\\
 \longrightarrow & \,\,\,b_{2}b_{8}-b_{6}b_{7}+b_{8}b_{10}+b_{9}b_{a}+1\\
 \longrightarrow & \,\,\,b_{2}b_{10}+b_{2}
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}b_{9}+b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}b_{9}b_{10}: & \text{ \ensuremath{(k,n)=(9,10)}.}\\
+\longrightarrow & \,\,\,b_{1}b_{9}+b_{9}b_{10}+b_{10}b_{a} & 643/1024\,\,\,(63\%)\\
+\longrightarrow & \,\,\,b_{2}b_{4}+b_{4}b_{5} & 883/1024\,\,\,(86\%)\\
+\longrightarrow & \,\,\,b_{3}b_{7}+b_{3}b_{8} & 973/1024\,\,\,(95\%)\\
+\longrightarrow & \,\,\,b_{2}b_{6}+b_{6}b_{8} & 1003/1024\,\,\,(98\%)\\
+\longrightarrow & \,\,\,b_{2}b_{5}+b_{5}b_{7}-b_{10}b_{a}+b_{10} & 1015/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{1}b_{8}+b_{7}b_{8} & 1019/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{2}b_{7}+b_{2}b_{10}-b_{4}b_{5}-b_{10}b_{a}+b_{10}+1 & 1023/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{4}b_{7}+b_{7} & 1024/1024(100\%)
 \end{flalign}
 
 \end_inset
@@ -941,6 +1249,17 @@ Decomposition of degree-
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}+b_{2}b_{3}b_{4}b_{5}+b_{3}b_{4}b_{5}b_{6}: & \text{ \ensuremath{(k,n)=(4,6)}.}\\
+\longrightarrow & \,\,\,b_{1}b_{4}+2b_{4}b_{5}+b_{7} & 44/64\,\,\,(69\%)\\
+\longrightarrow & \,\,\,b_{1}b_{3}+b_{2}b_{3}+b_{3}b_{6}+b_{6}b_{7} & 60/64\,\,\,(94\%)\\
+\longrightarrow & \,\,\,b_{2}b_{4}+b_{5}b_{6}+b_{2} & 64/64(100\%)
+\end{flalign}
+
+\end_inset
+
+
 \begin_inset Note Note
 status collapsed
 
@@ -1007,9 +1326,10 @@ status collapsed
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}+b_{2}b_{3}b_{4}b_{5}b_{6}+b_{3}b_{4}b_{5}b_{6}b_{7}: & \text{ \ensuremath{(k,n)=(5,7)}.}\\
@@ -1019,6 +1339,23 @@ status collapsed
  & \,\,\,+b_{3}b_{5}+b_{3}b_{7}+b_{4}b_{5}+b_{5}b_{7}+b_{6}b_{7}+b_{3}-b_{4}-b_{5}-b_{6}-2b_{7}+5\\
 \longrightarrow & \,\,\,b_{2}b_{3}+b_{2}b_{6}-b_{4}b_{5}+b_{5}b_{6}+b_{6}b_{7}+b_{a}(2b_{6}+b_{7})-b_{6}+1\\
 \longrightarrow & \,\,\,b_{1}b_{4}+b_{4}b_{5}-b_{5}b_{7}+b_{a}(b_{5}-2b_{6}-1)-b_{2}+b_{4}+2b_{6}+2
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}+b_{2}b_{3}b_{4}b_{5}b_{6}+b_{3}b_{4}b_{5}b_{6}b_{7}: & \text{ \ensuremath{(k,n)=(5,7)}.}\\
+\longrightarrow & \,\,\,b_{1}b_{5}+b_{5}b_{6}+b_{6}b_{7}+b_{a}(-2-b_{5}+2b_{6}+b_{7})+b_{5}-2b_{6}-b_{7}+2 & 86/128\,\,\,(67\%)\\
+\longrightarrow & \,\,\,b_{1}b_{3}+b_{3}b_{4}-b_{3}b_{6}+b_{3}b_{7}+b_{a}(b_{5}+b_{7})+b_{3} & 112/128\,\,\,(88\%)\\
+\longrightarrow & \,\,\,b_{1}b_{4}+b_{2}b_{4}+b_{4}b_{7}+b_{5}b_{7}+b_{a}(-1-b_{6}-b_{7})-b_{5}+b_{6}+2 & 124/128\,\,\,(97\%)\\
+\longrightarrow & \,\,\,b_{2}b_{4}-2b_{5}b_{a}+b_{6}b_{7}+b_{2}+b_{5}+1 & 128/128(100\%)
 \end{flalign}
 
 \end_inset
@@ -1039,9 +1376,10 @@ status collapsed
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}+b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}+b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}: & \text{ \ensuremath{(k,n)=(6,8)}.}\\
@@ -1053,6 +1391,11 @@ status collapsed
 \longrightarrow & \,\,\,b_{1}b_{4}+b_{6}b_{7}+b_{7}b_{8}\\
 \longrightarrow & \,\,\,b_{2}b_{7}+b_{7}b_{8}+b_{8}b_{a}+b_{2}
 \end{flalign}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1073,9 +1416,10 @@ status collapsed
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}+b_{2}b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}b_{9}+b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}b_{9}b_{10}: & \text{ \ensuremath{(k,n)=(8,10)}.}\\
@@ -1088,6 +1432,11 @@ status collapsed
 \longrightarrow & \,\,\,b_{1}b_{2}+b_{2}b_{9}-b_{5}b_{6}-b_{5}b_{a}+b_{6}b_{9}+2\\
 \longrightarrow & \,\,\,b_{2}b_{7}+b_{2}+b_{10}
 \end{flalign}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1110,9 +1459,6 @@ status collapsed
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
 status collapsed
 
@@ -1145,6 +1491,25 @@ status collapsed
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}+b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}+b_{5}b_{6}b_{7}b_{8}b_{9}b_{10}: & \text{ \ensuremath{(k,n)=(6,10)}.}\\
+\longrightarrow & \,\,\,b_{5}b_{6}+b_{5}b_{8}+b_{5}b_{9}+b_{8}b_{11}+b_{9}b_{11}+b_{10}b_{11} & 583/1024\,\,\,(57\%)\\
+\longrightarrow & \,\,\,b_{1}b_{2}+b_{4}b_{7}+b_{7}b_{10}+b_{9}b_{11}-b_{9}-b_{11}+1 & 815/1024\,\,\,(80\%)\\
+\longrightarrow & \,\,\,b_{1}b_{6}+b_{5}b_{6}+b_{6}-b_{11}+1 & 917/1024\,\,\,(90\%)\\
+\longrightarrow & \,\,\,b_{3}b_{4}+b_{3}b_{7}+b_{8}b_{9}+b_{9}b_{11} & 979/1024\,\,\,(96\%)\\
+\longrightarrow & \,\,\,b_{2}b_{4}+b_{4}b_{8}+b_{8}b_{9}-b_{9}b_{11}+b_{9}-b_{11}+1 & 1007/1024\,\,\,(98\%)\\
+\longrightarrow & \,\,\,b_{1}b_{3}+b_{7}b_{10}+b_{10}b_{11}+b_{3} & 1016/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{1}b_{4}+b_{4}b_{8}+b_{7}b_{10}+b_{9}b_{11}+b_{10}b_{11}-b_{9}-b_{11}+1 & 1021/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{1}b_{3}-b_{2}b_{11}+b_{7}b_{8}+b_{8}b_{9}-b_{10}b_{11}-b_{11}+3 & 1024/1024(100\%)
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}b_{6}+b_{3}b_{4}b_{5}b_{6}b_{7}b_{8}+b_{5}b_{6}b_{7}b_{8}b_{9}b_{10}: & \text{ \ensuremath{(k,n)=(6,10)}.}\\
 \longrightarrow & \,\,\,2b_{3}b_{4}+b_{7}b_{10} & 591/1024\,\,\,(58\%)\\
 \longrightarrow & \,\,\,2b_{3}b_{5}+b_{5}b_{6} & 847/1024\,\,\,(83\%)\\
 \longrightarrow & \,\,\,b_{1}b_{2}+b_{7}b_{8}+b_{8}b_{9} & 951/1024\,\,\,(93\%)\\
@@ -1158,9 +1523,6 @@ status collapsed
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
 status collapsed
 
@@ -1183,6 +1545,22 @@ status collapsed
 
 
 \end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}+b_{4}b_{5}b_{6}b_{7}+b_{7}b_{8}b_{9}b_{10}: & \text{ \ensuremath{(k,n)=(4,10)}.}\\
+\longrightarrow & \,\,\,b_{2}b_{3}+b_{6}b_{7}+b_{7}b_{9}+2b_{9}b_{a} & 581/1024\,\,\,(57\%)\\
+\longrightarrow & \,\,\,b_{2}b_{4}+b_{4}b_{6}+b_{a}(b_{9}-b_{10})+b_{10} & 823/1024\,\,\,(80\%)\\
+\longrightarrow & \,\,\,b_{1}b_{3}+b_{5}b_{6}+b_{8}b_{9}+b_{a}(b_{9}-b_{10})-b_{9}+1 & 930/1024\,\,\,(91\%)\\
+\longrightarrow & \,\,\,b_{1}b_{4}+b_{4}b_{5}+b_{4}b_{10}+b_{8}b_{10}+b_{a}(1-b_{7}+b_{9}) & 978/1024\,\,\,(96\%)\\
+\longrightarrow & \,\,\,b_{1}b_{4}+b_{7}b_{8}+b_{a}(1+b_{9})+b_{7} & 1000/1024\,\,\,(98\%)\\
+\longrightarrow & \,\,\,b_{2}b_{3}+b_{a}(b_{9}-b_{10})+b_{5}+b_{10} & 1015/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{1}b_{3}+b_{6}+b_{10} & 1020/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{5}b_{6}+b_{2}+b_{8}+b_{a} & 1024/1024(100\%)
+\end{flalign}
 
 \end_inset
 
@@ -1210,9 +1588,6 @@ status collapsed
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
 status collapsed
 
@@ -1224,9 +1599,10 @@ The gadget below has terms of both deg-4 and deg-5 (not exactly deg-k) as
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}+b_{3}b_{4}b_{5}b_{6}+b_{4}b_{5}b_{6}b_{7}b_{8}: & \text{ \ensuremath{(k,n)=(5,8)}.}\\
@@ -1240,6 +1616,25 @@ The gadget below has terms of both deg-4 and deg-5 (not exactly deg-k) as
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}b_{5}+b_{3}b_{4}b_{5}b_{6}+b_{4}b_{5}b_{6}b_{7}b_{8}: & \text{ \ensuremath{(k,n)=(5,8)}.}\\
+\longrightarrow & \,\,\,b_{1}b_{3}+b_{3}b_{4}+b_{6}b_{8}-b_{6}b_{9}+b_{7}b_{9}-b_{8}b_{9}+b_{9} & 156/256\,\,\,(61\%)\\
+\longrightarrow & \,\,\,b_{1}b_{5}+b_{5}b_{7}+b_{7}b_{9}+b_{8}b_{9}+b_{5}-b_{7}-b_{9}+1 & 202/256\,\,\,(79\%)\\
+\longrightarrow & \,\,\,b_{2}b_{4}+b_{6}b_{8}+b_{6}b_{9}-b_{7}b_{9}+b_{8}b_{9}+b_{7}-b_{8}-b_{9}+1 & 230/256\,\,\,(90\%)\\
+\longrightarrow & \,\,\,b_{2}b_{4}+b_{4}b_{8}+b_{4}-b_{9}+1 & 246/256\,\,\,(96\%)\\
+\longrightarrow & \,\,\,b_{1}b_{5}+2b_{6} & 252/256\,\,\,(98\%)\\
+\longrightarrow & \,\,\,b_{2}b_{5}+b_{7}b_{8}+b_{5} & 256/256(100\%)
+\end{flalign}
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1307,9 +1702,6 @@ status collapsed
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Note
 status collapsed
 
@@ -1403,8 +1795,8 @@ Decomposition of degree-
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}+2b_{1}b_{2}b_{3}+b_{1}b_{2}b_{4}+3b_{1}b_{3}b_{4}+b_{2}b_{3}b_{4}: & \text{ \ensuremath{(k,n)=(4,4)}.}\\
-\longrightarrow & \,\,\,2b_{1}b_{2}+5b_{1}b_{4}+b_{3}b_{4}\\
-\longrightarrow & \,\,\,-b_{1}b_{2}+3b_{1}b_{3}+4b_{2}b_{3}+2b_{2}b_{4}-4b_{3}b_{4}+4b_{3}-b_{4}+1
+\longrightarrow & \,\,\,2b_{1}b_{2}+5b_{1}b_{4}+b_{3}b_{4} & 11/16\,\,\,(69\%)\\
+\longrightarrow & \,\,\,-b_{1}b_{2}+3b_{1}b_{3}+4b_{2}b_{3}+2b_{2}b_{4}-4b_{3}b_{4}+4b_{3}-b_{4}+1 & 16/16(100\%)
 \end{flalign}
 
 \end_inset
@@ -1416,8 +1808,8 @@ Decomposition of degree-
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}+2b_{1}b_{2}b_{3}+b_{1}b_{3}b_{4}: & \text{ \ensuremath{(k,n)=(4,4)}.}\\
-\longrightarrow & \,\,\,4b_{1}b_{3}\\
-\longrightarrow & \,\,\,2b_{1}b_{2}+b_{1}b_{4}+b_{2}b_{4}
+\longrightarrow & \,\,\,4b_{1}b_{3} & 13/16\,\,\,(81\%)\\
+\longrightarrow & \,\,\,2b_{1}b_{2}+b_{1}b_{4}+b_{2}b_{4} & 16/16(100\%)
 \end{flalign}
 
 \end_inset
