@@ -119,14 +119,45 @@ today
 \end_layout
 
 \begin_layout Section*
-Decomposition of a monomial
+product of polynomials
 \end_layout
 
 \begin_layout Standard
 \align left
 \begin_inset Formula 
 \begin{flalign}
-b_{1}b_{2}b_{3}\ldots b_{k} & =\min\left(b_{1}b_{2}\ldots b_{k_{1}}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}b_{k_{1}+1}b_{k_{1}+2}\ldots b_{k_{2}}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}b_{k_{2}+1}b_{k_{2}+2}\ldots b_{k_{3}}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}...\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}b_{k_{n}+1}b_{k_{n}+2}...b_{k}\right) & {}\label{eq:monomialDecomp}
+f_{1}f_{2}\ldots f_{\kappa} & =\min\left(f_{1}\textcolor{blue}{\boldsymbol{,}}f_{2}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}...\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}f_{\kappa}\right), & f_{i}\left(b_{k_{i}},b_{k_{i}+1},\ldots,b_{k_{i+1}-1}\right)\ge0\label{eq:monomialDecomp-1}\\
+f_{1}f_{2}\ldots f_{\kappa} & =\min\left(\max f_{\kappa}f_{1}f_{2}\ldots f_{\kappa-1}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}f_{\kappa}-\min f_{\kappa}+f_{1}f_{2}\ldots f_{\kappa-1}\right), & f_{\kappa}<0,\,\,f_{i<\kappa}\left(b_{k_{i}},b_{k_{i}+1},\ldots,b_{k_{i+1}-1}\right)\ge0\label{eq:productOfPolynomialsOneNegative}
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}+b_{2}b_{3}b_{4}-b_{3}b_{4}b_{5}: & \text{ (Example of Eq. \ref{eq:productOfPolynomialsOneNegative}).}\\
+\longrightarrow & \,\,\,2b_{3}b_{4} & 25/32\,\,\,(78\%)\\
+\longrightarrow & \,\,\,b_{1}b_{2}+b_{2}-b_{5}-b_{3}b_{4}+1 & 32/32(100\%)
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+monomials
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Formula 
+\begin{flalign}
+b_{1}b_{2}b_{3}\ldots b_{k} & =\min\left(b_{1}b_{2}\ldots b_{k_{1}}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}b_{k_{1}+1}b_{k_{1}+2}\ldots b_{k_{2}}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}b_{k_{2}+1}b_{k_{2}+2}\ldots b_{k_{3}}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}...\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}b_{k_{n}+1}b_{k_{n}+2}...b_{k}\right) & \text{ (Example of Eq. \ref{eq:monomialDecomp-1}).}\label{eq:monomialDecomp}
 \end{flalign}
 
 \end_inset
@@ -172,12 +203,16 @@ b_{1}b_{2}b_{3}b_{4} & =\min\left(b_{1}b_{2}\textcolor{red}{\textcolor{blue}{\bo
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 
 \series bold
 Factorization Envelope:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Let F be a quadratic function with 
 \begin_inset Formula $E_{0}\leq F\leq E_{1}$
 \end_inset
@@ -194,7 +229,7 @@ Let F be a quadratic function with
 , we have:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}...b_{k}F: & \text{ }\\
@@ -207,7 +242,7 @@ Let F be a quadratic function with
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 where Eq.
  (
 \begin_inset Formula $\ref{eq:monomial}$
@@ -226,7 +261,7 @@ where Eq.
 , we have:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}...b_{k}F: & \text{ }\\
@@ -239,7 +274,7 @@ where Eq.
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 where the deg-k monomials can again be quadratized using Eq.
  (
 \begin_inset Formula $\ref{eq:monomialDecomp}$
@@ -248,36 +283,28 @@ where the deg-k monomials can again be quadratized using Eq.
 ).
 \end_layout
 
-\begin_layout Standard
-An example of this factorization envelope is:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{flalign}
- & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace b_{1}b_{2}b_{3}b_{4}+b_{2}b_{3}b_{4}-b_{3}b_{4}b_{5}: & \text{ }\\
-\longrightarrow & \,\,\,2b_{3}b_{4} & 25/32\,\,\,(78\%)\\
-\longrightarrow & \,\,\,b_{1}b_{2}+b_{2}-b_{5}-b_{3}b_{4}+1 & 32/32(100\%)
-\end{flalign}
-
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 
 \series bold
 Quantum envelopes:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \series bold
 Cubic:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace A_{1}B_{2}C_{3}: & \text{ }\\
@@ -290,7 +317,7 @@ Cubic:
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 where 
 \begin_inset Formula $A,B$
 \end_inset
@@ -311,7 +338,7 @@ where
  For example:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace Z_{1}Y_{2}Y_{3}: & \text{ }\\
@@ -324,11 +351,11 @@ where
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 or
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace X_{1}Y_{2}Z_{3}: & \text{ }\\
@@ -341,13 +368,13 @@ or
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \series bold
 Quartic:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace A_{1}B_{2}C_{3}D_{4}: & \text{ }\\
@@ -360,7 +387,7 @@ Quartic:
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 where 
 \begin_inset Formula $A,B,C$
 \end_inset
@@ -381,7 +408,7 @@ where
  For example:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace Z_{1}X_{2}Y_{3}X_{4}: & \text{ }\\
@@ -394,13 +421,13 @@ where
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \series bold
 Degree-k:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace A_{1}B_{2}C_{3}...D_{k}: & \text{ }\\
@@ -413,7 +440,7 @@ Degree-k:
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 where 
 \begin_inset Formula $A,B,C,...,D$
 \end_inset
@@ -430,7 +457,7 @@ where
  For example:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace X_{1}Y_{2}X_{3}Z_{4}Y_{5}Z_{6}: & \text{ }\\
@@ -443,8 +470,38 @@ where
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+s_{1}s_{2}\ldots s_{k}=\min\left(1+s_{1}s_{2}-s_{3}s_{4}\ldots s_{k}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}1-s_{1}s_{2}-s_{3}s_{4}\ldots s_{k}\right),s_{i}\in\{x,y,z\}\label{eq:quantum}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace x_{1}z_{2}x_{3}z_{4}y_{5}x_{6} & \text{ (Example of Eq. \ref{eq:quantum}).}\\
+\longrightarrow & \,\,\,1+x_{1}z_{2}-x_{3}z_{4}y_{5}x_{6} & 48/64\,\,\,(75\%)\\
+\longrightarrow & \,\,\,1-x_{1}z_{2}-x_{3}z_{4}y_{5}x_{6} & 64/64(100\%)
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
-Decomposition of binomials of degree-
+binomials of degree-
 \begin_inset Formula $k$
 \end_inset
 
@@ -912,8 +969,7 @@ status collapsed
 \longrightarrow & \,\,\,b_{1}b_{2}+b_{6} & 972/1024\,\,\,(95\%)\\
 \longrightarrow & \,\,\,b_{3}b_{4}+b_{8}b_{9} & 997/1024\,\,\,(97\%)\\
 \longrightarrow & \,\,\,b_{1}b_{5}+b_{7}b_{10} & 1010/1024\,\,\,(99\%)\\
-\longrightarrow & \,\,\,-b_{1}b_{7}-b_{1}b_{10}+b_{2}b_{3}-b_{2}b_{8}-b_{2}b_{10}+b_{3}b_{5}\\
- & \,\,\,+b_{6}b_{9}+b_{7}b_{10}-b_{8}b_{9}+b_{9}b_{10}-b_{3}-b_{7}+b_{8}+3 & 1016/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{2}b_{3}-b_{1}b_{7}-b_{1}b_{10}-b_{2}b_{8}-b_{2}b_{10}+b_{3}b_{5}+b_{6}b_{9}+b_{7}b_{10}-b_{8}b_{9}+b_{9}b_{10}-b_{3}-b_{7}+b_{8}+3\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace & 1016/1024\,\,\,(99\%)\\
 \longrightarrow & \,\,\,b_{1}b_{3}+b_{7}b_{8} & 1020/1024\,\,\,(99\%)\\
 \longrightarrow & \,\,\,b_{2}b_{4}+b_{2}b_{6}-b_{2}b_{9}-b_{3}b_{10}-b_{5}b_{7}+b_{7}b_{10}+b_{9}b_{10}-b_{10}+2 & 1023/1024\,\,\,(99\%)\\
 \longrightarrow & \,\,\,b_{2}b_{5}+b_{2}b_{9}+b_{6}b_{8} & 1024/1024(100\%)
@@ -1233,7 +1289,7 @@ status collapsed
 \end_layout
 
 \begin_layout Section*
-Decomposition of degree-
+degree-
 \begin_inset Formula $k$
 \end_inset
 
@@ -1654,7 +1710,7 @@ status collapsed
 \end_layout
 
 \begin_layout Section*
-Decomposition of degree-
+degree-
 \begin_inset Formula $k$
 \end_inset
 
@@ -1750,7 +1806,7 @@ status collapsed
 \end_layout
 
 \begin_layout Section*
-Decomposition of degree-
+degree-
 \begin_inset Formula $k$
 \end_inset
 
