@@ -126,8 +126,8 @@ product of polynomials
 \align left
 \begin_inset Formula 
 \begin{flalign}
-f_{1}f_{2}\ldots f_{\kappa} & =\min\left(f_{1}\textcolor{blue}{\boldsymbol{,}}f_{2}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}...\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}f_{\kappa}\right), & f_{i}\left(b_{k_{i}},b_{k_{i}+1},\ldots,b_{k_{i+1}-1}\right)\ge0\label{eq:monomialDecomp-1}\\
-f_{1}f_{2}\ldots f_{\kappa} & =\min\left(\max f_{\kappa}f_{1}f_{2}\ldots f_{\kappa-1}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}f_{\kappa}-\min f_{\kappa}+f_{1}f_{2}\ldots f_{\kappa-1}\right), & \min f_{\kappa}<0,\,\,f_{i<\kappa}\left(b_{k_{i}},b_{k_{i}+1},\ldots,b_{k_{i+1}-1}\right)\ge0\label{eq:productOfPolynomialsOneNegative}
+f_{1}f_{2}\ldots f_{\kappa} & =\min\left(f_{1}\textcolor{blue}{\boldsymbol{,}}f_{2}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}...\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}f_{\kappa}\right),\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace & f_{i}\left(b_{k_{i}},b_{k_{i}+1},\ldots,b_{k_{i+1}-1}\right)\ge0\label{eq:monomialDecomp-1}\\
+f_{1}f_{2}\ldots f_{\kappa} & =\min\left(f_{1}f_{2}\ldots f_{\kappa-1}\max f_{\kappa}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}f_{\kappa}-\min f_{\kappa}+f_{1}f_{2}\ldots f_{\kappa-1}\right),\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace & \min f_{\kappa}<0,\,\,f_{i<\kappa}\left(b_{k_{i}},b_{k_{i}+1},\ldots,b_{k_{i+1}-1}\right)\ge0\label{eq:productOfPolynomialsOneNegative}
 \end{flalign}
 
 \end_inset
