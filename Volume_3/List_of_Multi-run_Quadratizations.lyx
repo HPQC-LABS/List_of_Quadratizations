@@ -127,7 +127,7 @@ product of polynomials
 \begin_inset Formula 
 \begin{flalign}
 f_{1}f_{2}\ldots f_{\kappa} & =\min\left(f_{1}\textcolor{blue}{\boldsymbol{,}}f_{2}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}...\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}f_{\kappa}\right), & f_{i}\left(b_{k_{i}},b_{k_{i}+1},\ldots,b_{k_{i+1}-1}\right)\ge0\label{eq:monomialDecomp-1}\\
-f_{1}f_{2}\ldots f_{\kappa} & =\min\left(\max f_{\kappa}f_{1}f_{2}\ldots f_{\kappa-1}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}f_{\kappa}-\min f_{\kappa}+f_{1}f_{2}\ldots f_{\kappa-1}\right), & f_{\kappa}<0,\,\,f_{i<\kappa}\left(b_{k_{i}},b_{k_{i}+1},\ldots,b_{k_{i+1}-1}\right)\ge0\label{eq:productOfPolynomialsOneNegative}
+f_{1}f_{2}\ldots f_{\kappa} & =\min\left(\max f_{\kappa}f_{1}f_{2}\ldots f_{\kappa-1}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}f_{\kappa}-\min f_{\kappa}+f_{1}f_{2}\ldots f_{\kappa-1}\right), & \min f_{\kappa}<0,\,\,f_{i<\kappa}\left(b_{k_{i}},b_{k_{i}+1},\ldots,b_{k_{i+1}-1}\right)\ge0\label{eq:productOfPolynomialsOneNegative}
 \end{flalign}
 
 \end_inset
@@ -969,7 +969,7 @@ status collapsed
 \longrightarrow & \,\,\,b_{1}b_{2}+b_{6} & 972/1024\,\,\,(95\%)\\
 \longrightarrow & \,\,\,b_{3}b_{4}+b_{8}b_{9} & 997/1024\,\,\,(97\%)\\
 \longrightarrow & \,\,\,b_{1}b_{5}+b_{7}b_{10} & 1010/1024\,\,\,(99\%)\\
-\longrightarrow & \,\,\,b_{2}b_{3}-b_{1}b_{7}-b_{1}b_{10}-b_{2}b_{8}-b_{2}b_{10}+b_{3}b_{5}+b_{6}b_{9}+b_{7}b_{10}-b_{8}b_{9}+b_{9}b_{10}-b_{3}-b_{7}+b_{8}+3\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace & 1016/1024\,\,\,(99\%)\\
+\longrightarrow & \,\,\,b_{2}b_{3}-b_{1}b_{7}-b_{1}b_{10}-b_{2}b_{8}-b_{2}b_{10}+b_{3}b_{5}+b_{6}b_{9}+b_{7}b_{10}-b_{8}b_{9}+b_{9}b_{10}-b_{3}-b_{7}+b_{8}+3\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace & 1016/1024\,\,\,(99\%)\\
 \longrightarrow & \,\,\,b_{1}b_{3}+b_{7}b_{8} & 1020/1024\,\,\,(99\%)\\
 \longrightarrow & \,\,\,b_{2}b_{4}+b_{2}b_{6}-b_{2}b_{9}-b_{3}b_{10}-b_{5}b_{7}+b_{7}b_{10}+b_{9}b_{10}-b_{10}+2 & 1023/1024\,\,\,(99\%)\\
 \longrightarrow & \,\,\,b_{2}b_{5}+b_{2}b_{9}+b_{6}b_{8} & 1024/1024(100\%)
