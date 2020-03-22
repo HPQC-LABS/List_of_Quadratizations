@@ -7,10 +7,10 @@
 \textclass revtex4-1
 \begin_preamble
 \usepackage{amsfonts}
-\usepackage[fleqn]{amsmath}
+%\usepackage[fleqn]{amsmath}
 %\usepackage{palatino}
 \end_preamble
-\options showpacs,preprintnumbers,amsmath,amssymb,aps,notitlepage
+\options showpacs,preprintnumbers,amssymb,aps,notitlepage
 \use_default_options false
 \maintain_unincluded_children false
 \language english
@@ -51,7 +51,7 @@
 \use_package undertilde 1
 \cite_engine natbib
 \cite_engine_type authoryear
-\biblio_style plain
+\biblio_style plainnat
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
