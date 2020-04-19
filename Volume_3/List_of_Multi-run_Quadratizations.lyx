@@ -478,7 +478,7 @@ where
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-s_{1}s_{2}\ldots s_{k}=\min\left(1+s_{1}s_{2}-s_{3}s_{4}\ldots s_{k}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}1-s_{1}s_{2}-s_{3}s_{4}\ldots s_{k}\right),s_{i}\in\{x,y,z\}\label{eq:quantum}
+s_{1}s_{2}\ldots s_{k}=\min\left(1+s_{1}s_{2}-s_{3}s_{4}\ldots s_{k}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}1-s_{1}s_{2}+s_{3}s_{4}\ldots s_{k}\right),s_{i}\in\{x,y,z\}\label{eq:quantum}
 \end{equation}
 
 \end_inset
@@ -492,7 +492,24 @@ s_{1}s_{2}\ldots s_{k}=\min\left(1+s_{1}s_{2}-s_{3}s_{4}\ldots s_{k}\textcolor{r
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace x_{1}z_{2}x_{3}z_{4}y_{5}x_{6} & \text{ (Example of Eq. \ref{eq:quantum}).}\\
 \longrightarrow & \,\,\,1+x_{1}z_{2}-x_{3}z_{4}y_{5}x_{6} & 48/64\,\,\,(75\%)\\
-\longrightarrow & \,\,\,1-x_{1}z_{2}-x_{3}z_{4}y_{5}x_{6} & 64/64(100\%)
+\longrightarrow & \,\,\,1-x_{1}z_{2}+x_{3}z_{4}y_{5}x_{6} & 64/64(100\%)
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+heuristic gadgets
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace z_{1}z_{2}x_{3}\\
+\longrightarrow & \,\,\,z_{1}z_{2}+z_{1}x_{3}+z_{2}x_{3}-z_{1}-z_{2}-x_{3}+1 & 7/8\,\,\,(88\%)
 \end{flalign}
 
 \end_inset
