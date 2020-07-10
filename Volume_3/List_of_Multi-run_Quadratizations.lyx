@@ -487,12 +487,37 @@ s_{1}s_{2}\ldots s_{k}=\min\left(1+s_{1}s_{2}-s_{3}s_{4}\ldots s_{k}\textcolor{r
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+s_{1}s_{2}\ldots s_{k}=\min\left(1+s_{1}s_{2}...s_{j}-s_{j+1}s_{j+2}\ldots s_{k}\textcolor{red}{\textcolor{blue}{\boldsymbol{,}}}1-s_{1}s_{2}...s_{j}+s_{j+1}s_{j+2}\ldots s_{k}\right),s_{i}\in\{x,y,z\}\label{eq:quantum_general}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \align left
 \begin_inset Formula 
 \begin{flalign}
  & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace x_{1}z_{2}x_{3}z_{4}y_{5}x_{6} & \text{ (Example of Eq. \ref{eq:quantum}).}\\
 \longrightarrow & \,\,\,+x_{1}z_{2}-x_{3}z_{4}y_{5}x_{6}+1 & 48/64\,\,\,(75\%)\\
 \longrightarrow & \,\,\,-x_{1}z_{2}+x_{3}z_{4}y_{5}x_{6}+1 & 64/64(100\%)
+\end{flalign}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Formula 
+\begin{flalign}
+ & \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace x_{1}z_{2}x_{3}z_{4}y_{5}x_{6}x_{7}y_{8}y_{9}z_{10} & \text{ (Example of Eq. \ref{eq:quantum_general}).}\\
+\longrightarrow & \,\,\,+x_{1}z_{2}x_{3}z_{4}y_{5}-x_{6}x_{7}y_{8}y_{9}z_{10}+1 & 768/1024\,\,\,(75\%)\\
+\longrightarrow & \,\,\,-x_{1}z_{2}x_{3}z_{4}y_{5}+x_{6}x_{7}y_{8}y_{9}z_{10}+1 & 1024/1024(100\%)
 \end{flalign}
 
 \end_inset
